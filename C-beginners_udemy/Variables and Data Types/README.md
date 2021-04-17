@@ -82,3 +82,5 @@ int main()
 
 }
 ```
+- references:
+    - [codeforwin.org: list of all format specifiers in c programming](https://codeforwin.org/2015/05/list-of-all-format-specifiers-in-c-programming.html)
