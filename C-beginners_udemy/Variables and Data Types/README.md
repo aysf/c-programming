@@ -84,19 +84,6 @@ int main()
 
 }
 ```
-<<<<<<< HEAD
-- how to know size of characters 
-```c
-#include<stdio.h>
-{
-    char c;
-    printf("%lu\n",sizeof(c));
-}
-```
-
-- references:
-    - [codeforwin.org: list of all format specifiers in c programming](https://codeforwin.org/2015/05/list-of-all-format-specifiers-in-c-programming.html)
-
 
 ## Command Line Arguments
 
@@ -153,5 +140,3 @@ Hints
     - Use the '\n' excape character to display a new line
     - 
 =======
-
->>>>>>> 067bdf034a9c6d5d57f3395a7f9607f75d7a93ff
