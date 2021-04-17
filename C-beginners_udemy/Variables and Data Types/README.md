@@ -84,6 +84,7 @@ int main()
 
 }
 ```
+<<<<<<< HEAD
 - how to know size of characters 
 ```c
 #include<stdio.h>
@@ -151,3 +152,6 @@ Hints
 - Use printf to display the value of the enum variables
     - Use the '\n' excape character to display a new line
     - 
+=======
+
+>>>>>>> 067bdf034a9c6d5d57f3395a7f9607f75d7a93ff
