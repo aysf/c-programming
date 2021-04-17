@@ -1,6 +1,8 @@
 - how to know size of characters 
 ```c
 #include<stdio.h>
+
+int main()
 {
     char c;
     printf("%lu\n",sizeof(c));
