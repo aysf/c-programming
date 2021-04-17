@@ -11,6 +11,7 @@ int main()
 - how to know size of characters 2
 ```c
 #include<stdio.h>
+int main()
 {
     char c;
     c = 'k';
