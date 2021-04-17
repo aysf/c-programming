@@ -1,3 +1,5 @@
+# Chapter 5 - Variable and Data Types
+
 ## Enums and Chars
 
 ### Enums
@@ -82,3 +84,70 @@ int main()
 
 }
 ```
+- how to know size of characters 
+```c
+#include<stdio.h>
+{
+    char c;
+    printf("%lu\n",sizeof(c));
+}
+```
+
+- references:
+    - [codeforwin.org: list of all format specifiers in c programming](https://codeforwin.org/2015/05/list-of-all-format-specifiers-in-c-programming.html)
+
+
+## Command Line Arguments
+
+To pass data into a program
+
+- there are times when a program is developed that requires the user to enter a small amount of information at the terminal
+- This information might consist of a number indicating the triangular number that you want to have calculated or a word that you want to have looked up in a dictionary
+- Two ways of handling this:
+    - Requesting the data from the user
+    - supply the information to the program at the time the program is executed (command-line arguments)
+- We know that the main() function is a special function in C
+    - entry point of the program
+- When main() is called by the runtime system, two arguments are actually passed to the information
+    - the first argument (argc for argument count) is an integer value that specifies the number of arguments typed on the command line
+    - the second argument (argv for argument vector) is an array of character pinters (string)
+- The first entry in this array is a pointer to the name of the program that is executing
+- here an example
+```c
+#include<stdio.h>
+
+int main(int argc, char *argv[])
+{
+    int numberOfArguments = argc;
+    char *argument1 = argv[0];
+    char *argument2 = argv[1];
+
+    printf("Number of Arguments: %d", numberOfArguments);
+    printf("Argument 1 is the program name: %s", argument1);
+    printf("Argument 2 is the command line argument: %s", argument2);
+
+    return 0;
+}
+
+```
+
+## Challange -> Create and use an enum type
+
+Requirements:
+
+- In this challenge, you are to create a C program that defines an enum type and uses that type to display the values of some variables
+- The program should create an enum type named Company
+    - Valid values for this type are GOOGLE, FACEBOOK, XEROX, YAHOO, EBAY, MICROSOFT
+- The program should display as output, the value of the three variabls with each variable separated by a newline
+    - Correct output would be if XEROX, GOOGLE, and EBAY variables are printed in that order:
+        - 2
+        - 0
+        - 4
+
+Hints
+
+- Define the enum type and its value
+- Declare and initialize three variables with the values specified on the previous slide
+- Use printf to display the value of the enum variables
+    - Use the '\n' excape character to display a new line
+    - 
